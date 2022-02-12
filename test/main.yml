@@ -5,4 +5,4 @@
     - name: "Create file on /"
       file:
         path: "/file-from-awx"
-        state: present
+        state: touch
