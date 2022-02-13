@@ -4,5 +4,6 @@
   tasks:
     - name: "Create file on /"
       file:
-        path: "/file-from-awx"
-        state: file
+        path: /some_directory
+        state: directory
+        mode: '0755'
