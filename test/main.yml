@@ -4,6 +4,6 @@
   tasks:
     - name: "Create file on /"
       file:
-        path: /some_directory
+        path: /some_directory/{{ ansible_facts['nodename'] }}
         state: directory
         mode: '0755'
