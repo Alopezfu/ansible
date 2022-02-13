@@ -8,5 +8,5 @@
         state: directory
         mode: '0755'
     - name: "Debug facts"
-      ansible.builtin.debug:
-        msg: {{ ansible_facts }}
+      debug:
+        msg: "{{ ansible_facts }}"
